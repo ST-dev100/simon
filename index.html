@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Tamene</title>
+    <link rel="icon" type="image/x-icon" href="/Images/simon.png">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body >
     <header>
         <nav>
-            <ul>
-                <li><a href="#sec2">Projects</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+            <ul id="navbar">
+                <li id="proInfo">Projects</li>
+                <li id="skillInfo">Skills </li>
+                <li id="aboutInfo">About</li>
+                <li id="contInfo">Contact</li>
+            </ul>
+            <ul id="menuIcon">
+                <img  src="/Images/menu.png" alt="" srcset="">
+                <ul class="hide">
+                    <li id="proInfosm">Projects</li>
+                    <li id="skillInfosm">Skills </li>
+                    <li id="aboutInfosm">About</li>
+                    <li id="contInfosm">Contact</li>
+                </ul>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="sec1">
+    
+        <section id="main1">
             <figure id="simonfirstpic">
-             <img id="simon_pic" src="simon.png" alt="simon" >
+             <img id="simon_pic" src="/Images/simon.png" alt="simon" >
             </br></br>
              <figcaption>Simon Tamene
                     <br>
@@ -34,18 +43,19 @@
                 <p id="preface">
                     I'm looking for a fast-growing technology company or startup to which I can help and contribute as a front-end developer, back-end developer, or full-stack developer. I would love to learn about your company, feel free to connect with me!
                 </p>
-                <ul id="mylinks">
-                    <li><a href=""><img  src="github.png" alt="" srcset=""></a></li>
-                    <li><a href=""><img  src="linkedin.png" alt="" srcset=""></a></li>
-                    <li><a href=""><img  src="twit.png" alt="" srcset=""></a></li>                    
+                <ul id="mylinks" >
+                    <li><a href=""><img   src="/Images/github.png" alt="" srcset=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/simon-tamene/"><img  src="/Images/linkedin.png" alt="" srcset=""></a></li>
+                    <li><a href=""><img  src="/Images/twit.png" alt="" srcset=""></a></li>                    
                 </ul>
             </div>
         </section>
-        <section id="sec2">
+    
+        <section id="main2">
             <h1 style="color: black;">My Projects</h1>
             <section id="project">
                 <figure style="border: 2px dashed white;">
-                    <img  src="tiger.png"/>
+                    <img  src="/Images/tiger.png"/>
                     <figcaption><a id="aa" href="http://">Show the code</a></figcaption>
                 </figure>
                <span><h1>Tiger Fitness Club Atheltes Mangment System</h1>
@@ -57,40 +67,89 @@
             </section>
             
         </section>
-        <section id="sec3">
+    
+        
+        <section id="main3">
          <h1>About me</h1>
          <p>I am a software developer with a background in JavaScript, CSS, HTML,Mongodb,Node js React,Express js, Redux. I have strong problem-solving skills, and I can learn new things quickly. I am looking for a fast-growing technology company or startup to which I can help and contribute as a Front-end developer, Back-end developer, or Full-stack developer.</p>
-         <a href="" style="background-color:brown; border: 2px solid white; color: white; padding: 5px;" >My resume</a>
+         <a href="./Docs/simontamene.pdf" style="background-color:brown; border: 2px solid white; color: white; padding: 5px; text-decoration: none;" download>My resume</a>
         </section>
-        <section id="sec4">
-           <h1>
-                Skills
-           </h1>
-           <table>
-            <tr>
-              <th>Languages</th>
-              <th>Frameworks</th>
-              <th>other</th>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>Bootstrap</td>
-              <td>Github</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Express js</td>
-              <td>Teamwork</td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>React js</td>
-                <td>Code review </td>
-              </tr>
-          </table>
+   
+          
+        <section id="main4">
+          <h1>Skills</h1>
+          <div id="skilltable">
+           <div id="languageskill">
+                <h2>Languages</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                </ul>
+           </div>
+        <div id="frameworskill">
+            <h2>Framework and Library skill</h2>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Express js</li>
+                <li>React js</li>
+                <li>JQuery</li>
+            </ul>
+       </div>
+       <div id="otherskill">
+        <h2>Other skills</h2>
+        <ul>
+            <li>Github</li>
+            <li>Team work</li>
+            <li>Code review</li>
+        </ul>
+   </div>
+         </div>
           
         </section>
-    </main>
+    <section id="main5">
+        <h3>Contact</h3>
+        <h4>
+            If you would love to know more about my previous work and skills please put your message here!
+        </h4>
+        <!-- <form action="#" onsubmit="send()">
+            <input class="inform" type="text" name="name" placeholder="Your Name" >
+            <br>
+            <input class="inform" type="email" name="email" placeholder="Your Email" >
+            <br>
+            <textarea class="inform" name="" id="" cols="30" rows="10" placeholder="How can I help you"></textarea>
+            <br>
+            <button class="inform" type="submit">Get in touch</button>
 
+        </form> -->
+            <form
+            action="https://formspree.io/f/mrgwdkwk"
+            method="POST"
+            >
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <br>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <br>
+            <!-- your other form fields go here -->
+            <button type="submit">Get in touch</button>
+            </form>
+    </section>
+    <footer>
+        <ul>
+            <li><a href=""><img   src="/Images/github.png" alt="" srcset=""></a></li>
+            <li><a href="https://www.linkedin.com/in/simon-tamene/"><img  src="/Images/linkedin.png" alt="" srcset=""></a></li>
+            <li><a href=""><img  src="/Images/twit.png" alt="" srcset=""></a></li> 
+            <li>Copyright &copy; 2023 Simon Tamene </li>
+        </ul>
+    </footer>
+ <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="script.js"></script>
 </body>
 </html>
