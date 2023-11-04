@@ -367,6 +367,11 @@ footer ul img{
     input,textarea,button,h4{
         font-size: medium;
     }
+    #simon_pic
+    {
+        width: 200px;
+        height: 200px;
+    }
     footer ul
     {
         justify-content: flex-start;
