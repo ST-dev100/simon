@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap');
+
 html
 {
     scroll-behavior: smooth;
@@ -11,7 +13,7 @@ header{
     top: 0px;
     /* font-family: sans-serif; */
     /* border: 2px solid red; */
-    display: flex;
+    display: none;
     
 }
 /* First navbar ul */
@@ -89,7 +91,7 @@ header > nav
     /* border: 2px solid red; */
     background-color: black;
     /* scroll-snap-align: start; */
-    display: flex;
+    display: none;
     /* justify-content:space-around; */
     /* align-items:center; */
     /* gap: 100px; */
@@ -140,7 +142,7 @@ header > nav
 }
 #main2
 {
-    display: flex;
+    display: none;
     flex-direction: column;
     letter-spacing: 2px;
     font-weight: bolder;
@@ -168,7 +170,7 @@ strong{
     /* border: 2px solid red; */
     background-color: black;
     /* scroll-snap-align: start; */
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content:center;
     gap: 20px;
@@ -196,7 +198,7 @@ strong{
 }
 #main4
 {
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
     background-color: black;
@@ -231,7 +233,7 @@ strong{
 {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     /* border: 2px solid red; */
@@ -279,7 +281,7 @@ h4{
 footer
 {
     margin-top: 10px;
-    display: flex;
+    display: none;
     justify-content: center;
     background-color: black;
     font-family: sans-serif;
@@ -300,6 +302,15 @@ footer li:hover{
 }
 footer ul img{
     max-width: 30px;
+}
+#preLoader{
+    height: 630px;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 150px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @keyframes border_style
 {
@@ -376,7 +387,16 @@ footer ul img{
     {
         justify-content: flex-start;
     }
-
+    #preLoader{
+        font-size: 50px;
+    }
+}
+@media (min-width:1400px)
+{
+    #preLoader
+    {
+        min-height: 800px;
+    }
 }
 
 

@@ -1,3 +1,18 @@
+window.addEventListener('load',()=>{
+    document.getElementById('preLoader').style.display = 'none';
+    document.getElementsByTagName('header')[0].style.display = 'flex';
+    document.getElementsByTagName('footer')[0].style.display = 'flex';
+    document.getElementById('main1').style.display = 'flex';
+    document.getElementById('main2').style.display = 'flex';
+    document.getElementById('main3').style.display = 'flex';
+    document.getElementById('main4').style.display = 'flex';
+    document.getElementById('main5').style.display = 'flex';
+
+
+
+})
+
+
 document.getElementById('menuIcon').children[0].addEventListener('click',()=>{
     const list = document.getElementById('menuIcon').children[1];
     list.classList.toggle('hide');
@@ -24,12 +39,12 @@ function send()
       message => alert(message)
     );
 }
-window.addEventListener('scroll',()=>{
-    console.log(document.documentElement.scrollTop)
-    console.log(document.documentElement.scrollTop)
+// window.addEventListener('scroll',()=>{
+//     console.log(document.documentElement.scrollTop)
+//     console.log(document.documentElement.scrollTop)
 
 
-})
+// })
 
 document.getElementById('proInfo').addEventListener('click',()=>{
     document.getElementById('main2').scrollIntoView()
